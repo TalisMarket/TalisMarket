@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#000000,#301934);
+}
+header {
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+ header .logo {
+     color: #fff;
+     font-weight: 700;
+     text-decoration: none;
+     font-size: 2em;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+}
+ header ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ header ul li {
+      list-style: none;
+      margin-left: 20px;
+}
+    header ul li a {
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #fff;
+        border-radius: 20px;
+    }
+        header ul li a:hover,
+        header ul li a.active {
+            background: #fff;
+            color: #2b1055;
+        }
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+    section::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to top,#FF0000,transparent);
+        z-index: 1000;
+    }
+            section img {
+        position: absolute;
+        top: 0;
+        Left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+        section img#moon {
+            mix-blend-mode: screen;
+        }
+        section img#mountains_front {
+            z-index: 10;
+        }
+#text {
+    position: absolute;
+    right: -550px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #000000;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+    .sec h2 {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .sec p {
+        font-size: 1em;
+        color: #fff;
+    }
+.copywriting-section {
+    position: relative;
+    padding: 100px;
+    height: 650px;
+    background: #1c0522;
+    border: 2px solid red;
+    box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+    .copywriting-section h2 {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .copywriting-section p {
+        font-size: 1em;
+        color: #fff;
+    }   
+    .about-section {
+        position: relative;
+        padding: 100px;
+        background: #1c0522;
+        border: 2px solid red;
+        box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+    
+        .about-section h2 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .about-section p {
+            font-size: 1em;
+            color: #fff;
+        }   
+        #contact .calender-container {
+            position: relative; /* or "absolute" */
+            width: 50%;
+            height: 680px;
+            max-width: 800px;
+            left: -50px;
+            top: 0;
+          }
+          #contact .calender-container iframe {
+            border: 10px solid rgb(255, 0, 0); /* add red translucent frame with 50% transparency */
+            box-shadow: 0 0 20px rgb(255, 0, 0); /* add red translucent shiny effect */
+          }
+          .contact-text-container {
+            position: relative;
+            height: 600px;
+            width: 50%;
+            padding: 100px;
+            background: #1c0522;
+            border: 2px solid red;
+            box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+        
+            .contact-text-container h2 {
+                font-size: 3.5em;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+        
+            .contact-text-container p {
+                font-size: 1em;
+                color: #fff;
+            }
+ .services-section {
+        position: relative;
+        padding: 100px;
+        height: 690px;
+        background: #1c0522;
+        border: 2px solid red;
+        box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+        .services-section h2 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .services-section p {
+            font-size: 1em;
+            color: #fff;
+        }
+          
+

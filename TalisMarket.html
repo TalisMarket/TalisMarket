@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TalisMarketing - Digital Marketing Services</title>
+    <script src="js/site.js"></script>
+    <link rel="stylesheet" type="text/css" href="talis.css">
+    <base href="https://www.TalisMarket.com/">
+</head>
+<body>
+    <header>
+        <a class="logo">TalisMarket</a>
+        <ul>
+            <li><a class="active">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Reviews</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="file:///Users/michaeliversen/Library/CloudStorage/OneDrive-Vikenfylkeskommune/mappe%20uten%20navn/Talis/stars.png" id="stars">
+        <img src="file:///Users/michaeliversen/Library/CloudStorage/OneDrive-Vikenfylkeskommune/mappe%20uten%20navn/Talis/moon.png" id="moon">
+        <img src="file:///Users/michaeliversen/Desktop/Empty%20(1).png" id="mountains_behind">
+        <h2 id="text">Welcome</h2>
+        <button id="btn">Exclusive Services</button>
+        <img src="file:///Users/michaeliversen/Desktop/Empty%20(1).png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>THE TALISMARKET</h2>
+        <p>
+            Are you looking to launch a new business or revamp your current copy to increase sales? Look no further! Our team of experienced copywriters with backgrounds in marketing, business, and psychology will provide you with cutting-edge, consumer-focused copywriting services.
+            <br><br>Our services include one-on-one consultations and pay-per-hour pricing with no BS word count limits, ensuring you get the personalized attention and support you need. Plus, we offer quick turnaround times and unparalleled customer service.
+            <br><br>Don't hesitate to reach out with any questions, and rest assured that our work is backed by unlimited revisions and a money-back guarantee on open orders. Let us help you take your business to the next level with our comprehensive copywriting services.
+        </p>
+    </div>
+    <script>let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+        });
+
+        // function to scroll to a section
+        function scrollToSection(sectionId) {
+            // find the element with the specified id
+            let section = document.getElementById(sectionId);
+            // scroll to the top of the element
+            section.scrollIntoView({ behavior: 'smooth' });
+        }</script>
+    <header>
+        <a class="logo" onclick="scrollToSection('sec')">TalisMarket</a>
+        <ul>
+            <li><a onclick="scrollToSection('home')" class="active" style="color: black;">Home</a></li>
+            <li><a onclick="scrollToSection('about')">About</a></li>
+            <li><a onclick="scrollToSection('services')">Services</a></li>
+            <li><a onclick="scrollToSection('reviews')">Reviews</a></li>
+            <li><a onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Add id attributes to the sections that correspond to the navigation links -->
+    <section id="home">
+        <body>
+            <div class="copywriting-section" id="copywriting-section">
+                <h2>HOME</h2>
+                <p>
+                    We are a team of professional writers and marketers dedicated to helping businesses and private individuals communicate effectively and achieve their goals. Whether you need help with copywriting, digital marketing, resume writing, or any other aspect of communication, we have the skills and experience to help you succeed.
+                    <br><br>On our website, you'll find more information about what we offer and how we can help. Be sure to check out our About page to learn more about our team and our mission. Our Services page lists all the services we provide, and our Reviews page features feedback from our satisfied clients. And when you're ready to get in touch, our Contact page has all the details you need to get in touch with us.
+                    <br><br>Thank you for visiting our website. We hope to hear from you soon and start helping you achieve your communication and marketing goals.
+                </p>
+            </div>
+        </body>
+      </section>
+
+    <section id="about">
+        <body>
+            <div class="about-section" id="about-section">
+                <h2>ABOUT</h2>
+                <p>
+                    At TalisMarketing, we offer a wide range of professional writing and digital marketing services to help businesses and individuals reach their goals. Our team of experienced copywriters has expertise in areas such as copywriting, digital marketing, rewriting, translation, resume writing, content writing, and copy typing.
+                    <br><br>Our copywriting services focus on creating compelling and effective copy that resonates with your target audience and helps drive conversions. We also offer digital marketing services to help businesses establish a strong online presence and reach their target audience through various channels such as social media, email marketing, and SEO.
+                    <br><br>In addition to these services, we also offer rewriting and translation services to help businesses and individuals communicate their message effectively to a global audience. Our resume writing services can help individuals craft a professional and attention-grabbing resume that stands out in the job market.
+                    <br><br>We pride ourselves on offering personalized attention and support to our clients, with one-on-one consultations and pay-per-hour pricing with no BS word count limits. We also have quick turnaround times and unparalleled customer service, and all of our work is backed by unlimited revisions and a money-back guarantee on open orders. Contact us to learn more about how we can help you take your business or career to the next level with our comprehensive writing and digital marketing services.
+                </p>
+            </div>
+        </body>
+    </section>
+    <section id="services">
+        <div class="services-section" id="services-section">
+          <h2>WHAT WE OFFER</h2>
+          <p>We offer a wide range of professional writing and marketing services to help you communicate effectively and achieve your goals.</p>
+          <p>Our team of experienced writers and marketers are skilled in a variety of areas, including:</p>
+          <ul>
+            <br><br>
+            <li>Copywriting: We can help you craft compelling, persuasive copy for your website, emails, social media, and more.</li>
+            <li>Digital marketing: From SEO to social media marketing, we can help you reach and engage your target audience online.</li>
+            <li>Resume writing: Let us help you create a professional, effective resume that showcases your skills and experience.</li>
+            <li>Rewriting: Need to update or rewrite existing content? We can help you freshen up your message and improve readability.</li>
+            <li>Creative writing: Need to capture your audience's attention with engaging, original content? We can help you craft compelling stories and messages that stand out.</li>
+            <li>Content writing: From blog posts to articles, we can help you create high-quality, informative content that resonates with your audience.</li>
+            <li>Copy typing: Need to transcribe or type up existing documents? We can handle all your typing needs accurately and efficiently.</li>
+            <li>Translation: Need your content translated into another language? We offer translation services in a variety of languages to help you reach a global audience.</li>
+          </ul>
+          <br><br>
+          <p>Contact us today to learn more about how we can help you achieve your communication and marketing goals.</p>
+        </div>
+      </section>       
+    <section id="reviews">
+        <!-- content for the Reviews section goes here -->
+    </section>
+    <section id="contact">
+        <div class="calender-container" data-url="https://calendly.com/michaeliversen" data-processed="true">
+          <div class="calendly-spinner">
+            <div class="calendly-bounce1"></div>
+            <div class="calendly-bounce2"></div>
+            <div class="calendly-bounce3"></div>
+          </div>
+          <iframe src="https://calendly.com/michaeliversen?embed_domain=iagmbed_type=Inline" width="100%" height="100%" frameborder="0" data-dashlane-frameid="20541"></iframe>
+        </div>
+        <div class="contact-text-container">
+            <h2>CONTACT US</h2>
+            <p>
+              Welcome to our contact page! If you have any questions or would like to get in touch with us, you can reach us using the following details:
+              <br><br>
+              Name: Michael Iversen
+              <br>
+              Mail: michaeliversen2512@gmail.com
+              <br><br>
+              Whether you're interested in our services, have a question about our company, or simply want to say hello, we're always happy to hear from you. We look forward to connecting with you!
+            </p>
+          </div>                        
+      </section>      
+</body>
+</html>
