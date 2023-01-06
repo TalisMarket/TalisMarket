@@ -218,4 +218,11 @@ section {
       height: 90%;
     }
   }  
+/* Small screen (mobile phone) style */
+@media only screen and (max-width: 600px) {
+  .copywriting-section {
+    width: 90%; /* Use a wider width for small screens */
+    padding: 1em; /* Use a smaller padding value for small screens */
+  }
+}
 
