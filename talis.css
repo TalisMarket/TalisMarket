@@ -190,6 +190,9 @@ section {
             }
  .services-section {
         position: relative;
+        width: 120%; /* 80% of the screen width */
+        max-width: 1400px; /* Max width of 1200px */
+        margin: 0 auto; /* Center the block */
         padding: 2em;
         height: 690px;
         background: #1c0522;
