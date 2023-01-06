@@ -225,4 +225,9 @@ section {
     padding: 1em; /* Use a smaller padding value for small screens */
   }
 }
-
+ @media only screen and (max-width: 600px) {
+    .services-section {
+      width: 90%; /* Use a wider width for small screens */
+      padding: 1em; /* Use a smaller padding value for small screens */
+    }
+  }
