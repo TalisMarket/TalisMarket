@@ -66,7 +66,7 @@ section {
         bottom: 0;
         width: 100%;
         height: 50px;
-        background: linear-gradient(to top,#FF0000,transparent);
+        background: linear-gradient(to top,#00fffb,transparent);
         z-index: 1000;
     }
             section img {
@@ -122,8 +122,8 @@ section {
     padding: 100px;
     height: 650px;
     background: #1c0522;
-    border: 2px solid red;
-    box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(0, 208, 255);
+    box-shadow: 0 0 0 2px rgb(0, 208, 255), 0 0 0 5px rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 
@@ -141,8 +141,8 @@ section {
         position: relative;
         padding: 100px;
         background: #1c0522;
-        border: 2px solid red;
-        box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(0, 208, 255);
+        box-shadow: 0 0 0 2px rgb(0, 208, 255), 0 0 0 5px rgba(0, 0, 0, 0.5);
         color: #fff;
     }
     
@@ -164,8 +164,8 @@ section {
             top: 0;
           }
           #contact .calender-container iframe {
-            border: 10px solid rgb(255, 0, 0); /* add red translucent frame with 50% transparency */
-            box-shadow: 0 0 20px rgb(255, 0, 0); /* add red translucent shiny effect */
+            border: 10px solid rgb(0, 208, 255); /* add red translucent frame with 50% transparency */
+            box-shadow: 0 0 20px rgb(0, 208, 255); /* add red translucent shiny effect */
           }
           .contact-text-container {
             position: relative;
@@ -173,8 +173,8 @@ section {
             width: 58%;
             padding: 70px;
             background: #1c0522;
-            border: 2px solid red;
-            box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgb(0, 208, 255);
+            box-shadow: 0 0 0 2px rgb(0, 208, 255), 0 0 0 5px rgba(0, 0, 0, 0.5);
             color: #fff;
         }
         
@@ -199,8 +199,8 @@ section {
         position: relative;
         padding: 100px;
         background: #1c0522;
-        border: 2px solid red;
-        box-shadow: 0 0 0 2px red, 0 0 0 5px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(0, 208, 255);
+        box-shadow: 0 0 0 2px rgb(0, 208, 255), 0 0 0 5px rgba(0, 0, 0, 0.5);
         color: #fff;
     }
         .services-section h2 {
@@ -218,7 +218,53 @@ section {
               padding: 1em; /* Use a smaller padding value for small screens */
             }
           }
-        
-
-  
-  
+          #social-media {
+            background-color: #f4f4f4;
+            padding: 120px;
+          }
+          
+          #social-media h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          
+          .social-media-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+          }
+          
+          .social-media-links a {
+            display: inline-block;
+            margin: 0 10px;
+            width: 50px; /* Increase the size of the social media links */
+            height: 50px; /* Increase the size of the social media links */
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+          }
+          
+          .social-media-links a:hover {
+            background-color: #2b1055;
+          }
+          
+          .follow-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            margin-top: 20px;
+            color: #000000; /* Set the text color to black */
+          }
+          
+          .social-media-links img {
+            width: 40px; /* Adjust the width as needed */
+            height: 40px; /* Adjust the height as needed */
+            object-fit: contain; /* Adjust the object-fit property as needed */
+          }
+          
